@@ -29,7 +29,7 @@ ul, ol {
   margin: vars.$spacing-unit 0;
 }
 li {
-  margin-bottom: math.div(vars.$spacing-unit / 2);
+  margin-bottom: math.div(vars.$spacing-unit, 2);
 }
 
 /* Paddings & margins */
