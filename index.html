@@ -1,86 +1,94 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Framework SASS</title>
-    <link rel="stylesheet" href="static/css/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="static/css/styles.css" />
+  </head>
+  <body>
     <h1>divs</h1>
-    <div class="container" style="border: 1px solid">
-        Hola!
-    </div>
+    <div class="container" style="border: 1px solid">Hola!</div>
 
     <div class="container-fluid" style="border: 1px solid; margin-top: 10px">
-        Contenedor Fluido!
+      Contenedor Fluido!
     </div>
 
-    <div class="container-sm" style="border: 1px solid">
-        Contenedor sm
-    </div>
+    <div class="container-sm" style="border: 1px solid">Contenedor sm</div>
 
-    <div class="container-md" style="border: 1px solid">
-        Contenedor md
-    </div>
+    <div class="container-md" style="border: 1px solid">Contenedor md</div>
 
-    <div class="container-lg" style="border: 1px solid">
-        Contenedor lg
-    </div>
+    <div class="container-lg" style="border: 1px solid">Contenedor lg</div>
 
-    <div class="container-xl" style="border: 1px solid">
-        Contenedor xl
-    </div>
+    <div class="container-xl" style="border: 1px solid">Contenedor xl</div>
 
-    <h1>tabla 1</h1>
+    <h1>grid 1</h1>
     <div class="container-fluid debug-border">
-        <div class="row">
-            <div class="col">
-                <div class="item">Fila 1 - Col 1</div>
-            </div>
-            <div class="col">
-                <div class="item">Fila 1 - Col 2</div>
-            </div>
+      <div class="row">
+        <div class="col">
+          <div class="item">Fila 1 - Col 1</div>
         </div>
-        <div class="row">
-            <div class="col">
-                <div class="item">Fila 2 - Col 1</div>
-            </div>
-            <div class="col-auto">
-                <div class="item">Fila 2 - Col 2</div>
-            </div>
-            <div class="col">
-                <div class="item">Fila 2 - Col 3</div>
-            </div>
+        <div class="col">
+          <div class="item">Fila 1 - Col 2</div>
         </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="item">Fila 2 - Col 1</div>
+        </div>
+        <div class="col-auto">
+          <div class="item">Fila 2 - Col 2</div>
+        </div>
+        <div class="col">
+          <div class="item">Fila 2 - Col 3</div>
+        </div>
+      </div>
     </div>
 
-    <br>
-    <br>
-    <h1>tabla 2</h1>
+    <br />
+    <br />
+
+    <h1>grid 2</h1>
     <div class="container-fluid debug-border">
-        <div class="row">
-            <div class="col-3">
-                <div class="item">.col-3</div>
-            </div>
-            <div class="col-7">
-                <div class="item">.col-7</div>
-            </div>
-            <div class="col-2">
-                <div class="item">.col-2</div>
-            </div>
+      <div class="row">
+        <div class="col-3">
+          <div class="item">.col-3</div>
         </div>
-        <div class="row">
-            <div class="col">
-                <div class="item">.col</div>
-            </div>
-            <div class="col-auto">
-                <div class="item">.col-auto</div>
-            </div>
-            <div class="col-6">
-                <div class="item">.col-6</div>
-            </div>
+        <div class="col-7">
+          <div class="item">.col-7</div>
         </div>
+        <div class="col-2">
+          <div class="item">.col-2</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="item">.col</div>
+        </div>
+        <div class="col-auto">
+          <div class="item">.col-auto</div>
+        </div>
+        <div class="col-6">
+          <div class="item">.col-6</div>
+        </div>
+      </div>
     </div>
-</body>
+
+    <br />
+    <br />
+
+    <h1>EJERCICIOS</h1>
+
+    <h2>Ejercicio 1</h2>
+    <div class="container" style="border: 1px solid; padding: 12px">
+      <p class="fs-sm-1">.fs-sm-1 — tamaño sm index 1</p>
+      <p class="fs-sm-2">.fs-sm-2 — tamaño sm index 2</p>
+      <p class="fs-lg-3">.fs-lg-3 — tamaño lg index 3</p>
+      <p class="fs-sm-4">.fs-sm-4 — tamaño sm index 4</p>
+      <p class="fs-md-1">.fs-md-1 — tamaño md index 1</p>
+      <p class="fs-md-2">.fs-md-2 — tamaño md index 2</p>
+      <p class="fs-md-3">.fs-md-3 — tamaño md index 3</p>
+      <p class="fs-xl-1">.fs-xl-1 — tamaño xl index 1</p>
+    </div>
+  </body>
 </html>

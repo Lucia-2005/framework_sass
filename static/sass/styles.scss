@@ -5,6 +5,7 @@
 @use "base/colors";
 @use "layouts/containers";
 @use "layouts/grid";
+@use "base/typography_extra.scss";
 
 .debug-border {
     margin-block: 10px;
