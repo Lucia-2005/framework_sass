@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Framework SASS</title>
     <link rel="stylesheet" href="static/css/styles.css" />
+    <style>
+      /* Helpers to print CSS variable values using generated content */
+      .gutter-value {
+        font-weight: 700;
+      }
+      .show-gx .gutter-value::after {
+        content: var(--gutter-x);
+      }
+      .show-gy .gutter-value::after {
+        content: var(--gutter-y);
+      }
+    </style>
   </head>
   <body>
     <h1>divs</h1>
@@ -94,20 +106,16 @@
 
     <br />
     <h2>Ejercicio 2</h2>
-    <div
-      class="gx-2 gy-3"
-      style="border: 1px solid; padding: 12px; margin-bottom: 20px"
-    >
-      <div class="row debug-border" style="margin-bottom: 10px">
-        <div class="col">
-          <div class="item">Columna 1</div>
-        </div>
-        <div class="col">
-          <div class="item">Columna 2</div>
+      <div class="container gx-2 gy-1" style="border: 1px solid; padding: 12px; margin-bottom: 12px">
+        <p><strong>Clases:</strong> <code>.gx-2</code> <code>.gy-1</code></p>
+        <div class="row" style="padding: calc(var(--gutter-y)/2);">
+          <div class="col">
+            <div class="item">Col A</div>
+          </div>
+          <div class="col">
+            <div class="item">Col B</div>
+          </div>
         </div>
       </div>
-    </div>
-
-   
   </body>
 </html>
