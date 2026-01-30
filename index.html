@@ -93,7 +93,10 @@
 
     <br />
     <h2>Ejercicio 1</h2>
-    <div class="container" style="border: 1px solid; padding: 12px">
+    <div
+      class="container"
+      style="border: 1px solid; padding: 12px; margin-bottom: 12px"
+    >
       <p class="fs-sm-1">.fs-sm-1 — tamaño sm index 1</p>
       <p class="fs-sm-2">.fs-sm-2 — tamaño sm index 2</p>
       <p class="fs-lg-3">.fs-lg-3 — tamaño lg index 3</p>
@@ -106,16 +109,19 @@
 
     <br />
     <h2>Ejercicio 2</h2>
-      <div class="container gx-2 gy-1" style="border: 1px solid; padding: 12px; margin-bottom: 12px">
-        <p><strong>Clases:</strong> <code>.gx-2</code> <code>.gy-1</code></p>
-        <div class="row" style="padding: calc(var(--gutter-y)/2);">
-          <div class="col">
-            <div class="item">Col A</div>
-          </div>
-          <div class="col">
-            <div class="item">Col B</div>
-          </div>
-        </div>
+
+    <p style="margin: 0 0 8px 0">.gx-2 .gy-4</p>
+    <div class="container gx-2 gy-4" style="border: 1px solid; padding: 12px; margin-bottom: 12px">
+      <div class="row debug-border gx-2 gy-4">
+        <div class="col"><div class="item">A</div></div>
+        <div class="col"><div class="item">B</div></div>
+        <div class="col"><div class="item">C</div></div>
       </div>
+      <div class="row debug-border gx-4 gy-3">
+        <div class="col"><div class="item">D</div></div>
+        <div class="col"><div class="item">E</div></div>
+        <div class="col"><div class="item">F</div></div>
+      </div>
+    </div>
   </body>
 </html>
