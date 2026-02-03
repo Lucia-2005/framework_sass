@@ -1,0 +1,73 @@
+$columns: 12;
+
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+[class^="col-"] {
+  box-sizing: border-box;
+  padding: 1rem;
+  min-height: 150px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+@mixin make-columns($breakpoint, $min-width) {
+  @media (min-width: $min-width) {
+    @for $i from 1 through $columns {
+      .col-#{$breakpoint}-#{$i} {
+        width: percentage($i / $columns);
+      }
+    }
+  }
+}
+
+
+@each $bp, $size in $breakpoints {
+  @include make-columns($bp, $size);
+}
+
+$gutter-sizes: (
+  1: 8px,
+  2: 16px,
+  3: 32px,
+  4: 64px,
+  5: 128px
+);
+
+@each $bp, $min-width in $breakpoints {
+  @media (min-width: $min-width) {
+
+    @each $num, $size in $gutter-sizes {
+      .gx-#{$bp}-#{$num} {
+        --gutter-x: #{$size};
+      }
+    }
+
+    @each $num, $size in $gutter-sizes {
+      .gy-#{$bp}-#{$num} {
+        --gutter-y: #{$size};
+      }
+    }
+
+  }
+}
